@@ -59,5 +59,47 @@ namespace QQTClient.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap IE {
+            get {
+                object obj = ResourceManager.GetObject("IE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Lightbulb {
+            get {
+                object obj = ResourceManager.GetObject("Lightbulb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Lock {
+            get {
+                object obj = ResourceManager.GetObject("Lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap MSN {
+            get {
+                object obj = ResourceManager.GetObject("MSN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Power {
+            get {
+                object obj = ResourceManager.GetObject("Power", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Xion {
+            get {
+                object obj = ResourceManager.GetObject("Xion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

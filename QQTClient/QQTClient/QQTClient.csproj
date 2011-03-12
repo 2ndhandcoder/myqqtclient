@@ -75,6 +75,24 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Xion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lightbulb.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
