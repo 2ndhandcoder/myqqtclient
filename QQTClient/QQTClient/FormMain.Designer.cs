@@ -38,14 +38,14 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPageProfile = new System.Windows.Forms.TabPage();
             this.imageListTab = new System.Windows.Forms.ImageList(this.components);
-            this.账号ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.登录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.注销ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LogoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.在线帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.HelpOnlineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.menuMain.SuspendLayout();
             this.tabMain.SuspendLayout();
@@ -58,8 +58,8 @@
             // menuMain
             // 
             this.menuMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.账号ToolStripMenuItem,
-            this.帮助ToolStripMenuItem});
+            this.AccountToolStripMenuItem,
+            this.HelpToolStripMenuItem});
             this.menuMain.Location = new System.Drawing.Point(0, 0);
             this.menuMain.Name = "menuMain";
             this.menuMain.Size = new System.Drawing.Size(397, 24);
@@ -131,66 +131,67 @@
             this.imageListTab.Images.SetKeyName(2, "Home.png");
             this.imageListTab.Images.SetKeyName(3, "WinAmp.png");
             // 
-            // 账号ToolStripMenuItem
+            // AccountToolStripMenuItem
             // 
-            this.账号ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.登录ToolStripMenuItem,
-            this.注销ToolStripMenuItem,
+            this.AccountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LoginToolStripMenuItem,
+            this.LogoutToolStripMenuItem,
             this.toolStripSeparator1,
-            this.退出ToolStripMenuItem});
-            this.账号ToolStripMenuItem.Image = global::QQTClient.Properties.Resources.MSN;
-            this.账号ToolStripMenuItem.Name = "账号ToolStripMenuItem";
-            this.账号ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.账号ToolStripMenuItem.Text = "账号";
+            this.ExitToolStripMenuItem});
+            this.AccountToolStripMenuItem.Image = global::QQTClient.Properties.Resources.MSN;
+            this.AccountToolStripMenuItem.Name = "AccountToolStripMenuItem";
+            this.AccountToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.AccountToolStripMenuItem.Text = "账号";
             // 
-            // 登录ToolStripMenuItem
+            // LoginToolStripMenuItem
             // 
-            this.登录ToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Lock;
-            this.登录ToolStripMenuItem.Name = "登录ToolStripMenuItem";
-            this.登录ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-            this.登录ToolStripMenuItem.Text = "登录";
+            this.LoginToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Lock;
+            this.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem";
+            this.LoginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.LoginToolStripMenuItem.Text = "登录";
+            this.LoginToolStripMenuItem.Click += new System.EventHandler(this.LoginToolStripMenuItem_Click);
             // 
-            // 注销ToolStripMenuItem
+            // LogoutToolStripMenuItem
             // 
-            this.注销ToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Power;
-            this.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem";
-            this.注销ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-            this.注销ToolStripMenuItem.Text = "注销";
+            this.LogoutToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Power;
+            this.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem";
+            this.LogoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.LogoutToolStripMenuItem.Text = "注销";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(95, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
-            // 退出ToolStripMenuItem
+            // ExitToolStripMenuItem
             // 
-            this.退出ToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Xion;
-            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
-            this.退出ToolStripMenuItem.Text = "退出";
+            this.ExitToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Xion;
+            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ExitToolStripMenuItem.Text = "退出";
             // 
-            // 帮助ToolStripMenuItem
+            // HelpToolStripMenuItem
             // 
-            this.帮助ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.关于ToolStripMenuItem,
-            this.在线帮助ToolStripMenuItem});
-            this.帮助ToolStripMenuItem.Image = global::QQTClient.Properties.Resources.IE;
-            this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.帮助ToolStripMenuItem.Text = "帮助";
+            this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.AboutToolStripMenuItem,
+            this.HelpOnlineToolStripMenuItem});
+            this.HelpToolStripMenuItem.Image = global::QQTClient.Properties.Resources.IE;
+            this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
+            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.HelpToolStripMenuItem.Text = "帮助";
             // 
-            // 关于ToolStripMenuItem
+            // AboutToolStripMenuItem
             // 
-            this.关于ToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Lightbulb;
-            this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.关于ToolStripMenuItem.Text = "关于...";
+            this.AboutToolStripMenuItem.Image = global::QQTClient.Properties.Resources.Lightbulb;
+            this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.AboutToolStripMenuItem.Text = "关于...";
             // 
-            // 在线帮助ToolStripMenuItem
+            // HelpOnlineToolStripMenuItem
             // 
-            this.在线帮助ToolStripMenuItem.Name = "在线帮助ToolStripMenuItem";
-            this.在线帮助ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.在线帮助ToolStripMenuItem.Text = "在线帮助";
+            this.HelpOnlineToolStripMenuItem.Name = "HelpOnlineToolStripMenuItem";
+            this.HelpOnlineToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.HelpOnlineToolStripMenuItem.Text = "在线帮助";
             // 
             // FormMain
             // 
@@ -200,8 +201,10 @@
             this.Controls.Add(this.tabMain);
             this.Controls.Add(this.menuMain);
             this.MainMenuStrip = this.menuMain;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Client";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.menuMain.ResumeLayout(false);
             this.menuMain.PerformLayout();
@@ -220,14 +223,14 @@
         private System.Windows.Forms.MenuStrip menuMain;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPageProfile;
-        private System.Windows.Forms.ToolStripMenuItem 账号ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 登录ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 注销ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LoginToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LogoutToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 在线帮助ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HelpOnlineToolStripMenuItem;
         private System.Windows.Forms.ImageList imageListTab;
     }
 }
